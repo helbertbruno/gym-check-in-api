@@ -1,0 +1,47 @@
+{
+  "name": "03-api-solid",
+  "version": "1.0.0",
+  "description": "",
+  "main": "index.js",
+  "type": "module",
+  "scripts": {
+    "start:dev": "tsx watch src/server.ts",
+    "start": "node build/server.js",
+    "build": "tsup src --out-dir build",
+    "test": "vitest run --project unit",
+    "test:e2e": "vitest run --project e2e",
+    "test:watch": "vitest --project unit",
+    "test:e2e:watch": "vitest --project e2e",
+    "test:coverage": "vitest run --coverage",
+    "test:ui": "vitest --ui"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "devDependencies": {
+    "@rocketseat/eslint-config": "2.2.2",
+    "@types/bcryptjs": "2.4.6",
+    "@types/node": "25.6.2",
+    "@types/supertest": "7.2.1",
+    "@vitest/coverage-v8": "4.1.8",
+    "@vitest/ui": "4.1.8",
+    "elint": "2.0.1",
+    "prisma": "5.22.0",
+    "supertest": "7.2.2",
+    "tsup": "8.5.1",
+    "tsx": "4.21.0",
+    "typescript": "6.0.3",
+    "vite-tsconfig-paths": "6.1.1",
+    "vitest": "4.1.8"
+  },
+  "dependencies": {
+    "@fastify/cookie": "11.1.2",
+    "@fastify/jwt": "10.2.2",
+    "@prisma/client": "5.22.0",
+    "bcryptjs": "3.0.3",
+    "dayjs": "1.11.21",
+    "dotenv": "17.4.2",
+    "fastify": "5.8.5",
+    "zod": "4.4.3"
+  }
+}
